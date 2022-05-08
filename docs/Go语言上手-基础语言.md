@@ -1791,10 +1791,6 @@ func connect(reader *bufio.Reader, conn net.Conn) (err error) {
 
 ![image-20220507165640912](images/image-20220507165640912.png)
 
-# 总结
-
-
-
 # 课后作业
 
 ## 1. 修改第一个例子猜谜游戏里面的最终代码，使用fmt.Scanf来简化代码实现
