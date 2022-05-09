@@ -155,7 +155,7 @@ Add：计数器+delta
 
 Done：计数器-1
 
-Wait：阻塞知道计数器为0
+Wait：阻塞直到计数器为0
 
 ![image-20220508122708787](images/image-20220508122708787.png)
 
@@ -163,7 +163,7 @@ Wait：阻塞知道计数器为0
 
 计数器
 
-开启协程+1；执行结束-1；主协程阻塞知道计数器为0
+开启协程+1；执行结束-1；主协程阻塞直到计数器为0
 
 ```go
 package concurrence
@@ -1035,7 +1035,7 @@ func Init(filePath string) error {
 
 ## 完成结果
 
-> 完成发布帖子和发布评论
+> 支持发布帖子和发布评论
 
 ```go
 package main
@@ -1142,7 +1142,7 @@ func AddTopic(c *gin.Context) *PageData {
 		return &PageData{
 			Code: 500,
 			Msg:  "fail",
-			Data: "新增topic，未知错误!",
+			Data: "新增topic失败，未知错误!",
 		}
 	}
 }

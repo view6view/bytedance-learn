@@ -47,7 +47,7 @@ func AddTopic(c *gin.Context) *PageData {
 		return &PageData{
 			Code: 500,
 			Msg:  "fail",
-			Data: "新增topic，未知错误!",
+			Data: "新增topic失败，未知错误!",
 		}
 	}
 }

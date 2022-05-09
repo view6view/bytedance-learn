@@ -38,9 +38,9 @@ func (f *AddPostFlow) Do() (bool, error) {
 	}
 	// 加锁，防止并发造成数据异常
 	AddPostLock.Lock()
-	// 完善数据，内部数据正确，不会抛出异常
+	// 完善数据,内部系统稳定运行,暂不考虑异常
 	f.prepareInfo()
-	// 存储数据,内部系统稳定运行，暂不考虑异常
+	// 存储数据,内部系统稳定运行,暂不考虑异常
 	f.solveData()
 	// 解锁
 	AddPostLock.Unlock()
