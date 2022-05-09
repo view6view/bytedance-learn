@@ -6,9 +6,6 @@ go 1.16
 
 // 单元依赖
 require (
-	// 依赖标识：[Module Path][Version/Pseudo-version]
-	bou.ke/monkey v1.0.2
-	github.com/bytedance/gopkg v0.0.0-20220401081311-c38fb59326b7
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.3.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect

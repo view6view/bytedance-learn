@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/Moonlight-Zhao/go-project-example/repository"
 	"github.com/stretchr/testify/assert"
+	"homework4/repository"
 	"os"
 	"testing"
 )
